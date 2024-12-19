@@ -12,10 +12,9 @@
 @use "./helpers/global";
 
 // components
-@use "./components/overlay";
-@use "./components/burger";
 @use "./components/header";
 @use "./components/footer";
+@use "./components/cart";
 
 // Sections
 @use "./sections/hero";

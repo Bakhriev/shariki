@@ -1,51 +1,99 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	@include('./template/_head.html')
 	<body>
 		<div class="app">
-			<div class="overlay"></div>
 			@include('./assets/html/components/header.html')
 			<main class="main">
-				<!--  -->
-				@include('./assets/html/sections/hero.html')
 				<div class="container">
 					<div class="cart">
 						<h2 class="cart__title">Моя корзина</h2>
 
-						<div class="cart-product">
-							<h3 class="cart-product__title">
-								Фольгированный шар «Сверкающая бабочка»
-							</h3>
-							<div class="cart-product__body">
-								<img src="" alt="" class="cart-product__img" />
+						<div class="cart__products">
+							<div class="cart-product">
+								<h3 class="cart-product__title">
+									Фольгированный шар «Сверкающая бабочка»
+								</h3>
 
-								<div class="cart-product__counter-wrapper">
-									<div class="counter">
-										<input type="number" class="counter__input" />
+								<div class="cart-product__body">
+									<img
+										src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt=""
+										class="cart-product__img" />
+
+									<div class="cart-product__inner">
+										<div class="cart-product__counter-wrapper">
+											<div class="counter">
+												<button class="counter__decrement btn-reset">-</button>
+												<input
+													min="1"
+													max="999"
+													type="number"
+													class="counter__input input-reset" />
+												<button class="counter__increment btn-reset">+</button>
+											</div>
+											<div class="cart-product__text">шт</div>
+										</div>
+
+										<div class="cart-product__box">
+											<div class="cart-product__price">750 руб.</div>
+											<button class="cart-product__btn btn-reset">
+												<svg width="10" height="10">
+													<use href="./assets/img/svg/sprite.svg#close"></use>
+												</svg>
+											</button>
+										</div>
 									</div>
-									<div class="cart-product__label">шт</div>
 								</div>
+							</div>
 
-								<div class="cart-product__box">
-									<div class="cart-product__price">750 руб.</div>
-									<button class="cart-product__close-btn btn-reset">
-										<svg
-											width="10"
-											height="10"
-											viewBox="0 0 10 10"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M8.64404 1.38687C8.48133 1.22415 8.21749 1.22415 8.05479 1.38687L5.01545 4.4262L1.97614 1.38687C1.81342 1.22415 1.5496 1.22415 1.38689 1.38687C1.22417 1.54959 1.22417 1.81341 1.38689 1.97613L4.4262 5.01545L1.3869 8.05474C1.22417 8.21749 1.22417 8.48128 1.3869 8.64403C1.54961 8.80674 1.81343 8.80674 1.97615 8.64403L5.01545 5.6047L8.05479 8.64403C8.21749 8.80674 8.48133 8.80674 8.64404 8.64403C8.80675 8.48128 8.80675 8.21749 8.64404 8.05478L5.6047 5.01545L8.64404 1.97613C8.80675 1.81341 8.80675 1.54959 8.64404 1.38687Z"
-												fill="#0F0F0F" />
-										</svg>
-									</button>
+							<div class="cart-product">
+								<h3 class="cart-product__title">
+									Фольгированный шар «Сверкающая бабочка»
+								</h3>
+
+								<div class="cart-product__body">
+									<img
+										src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt=""
+										class="cart-product__img" />
+
+									<div class="cart-product__inner">
+										<div class="cart-product__counter-wrapper">
+											<div class="counter">
+												<button class="counter__decrement btn-reset">-</button>
+												<input
+													min="1"
+													max="999"
+													type="number"
+													class="counter__input input-reset" />
+												<button class="counter__increment btn-reset">+</button>
+											</div>
+											<div class="cart-product__text">шт</div>
+										</div>
+
+										<div class="cart-product__box">
+											<div class="cart-product__price">750000 руб.</div>
+											<button class="cart-product__btn btn-reset">
+												<svg width="10" height="10">
+													<use href="./assets/img/svg/sprite.svg#close"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+
+						<button class="cart__clear-btn btn-reset">
+							<svg width="10" height="10">
+								<use href="./assets/img/svg/sprite.svg#close"></use>
+							</svg>
+
+							<span>Очистить корзину</span>
+						</button>
 					</div>
 				</div>
-				<!--  -->
 			</main>
 			@include('./assets/html/components/footer.html')
 		</div>
