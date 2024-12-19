@@ -1,0 +1,78 @@
+.radio-group-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	padding: 8px;
+
+	border-radius: 14px;
+	background-color: #fff;
+}
+
+.radio-group {
+	font-family: var(--font-family);
+	color: #0f0f0f;
+
+	border: 1px solid #ebebeb;
+	border-radius: 10px;
+	padding: 20px 18px 14px 18px;
+
+	&__label {
+		position: relative;
+
+		margin-bottom: 14px;
+
+		display: inline-block;
+		padding-right: 10px;
+
+		font-weight: 600;
+		font-size: 14px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 6px;
+			height: 6px;
+
+			background-image: url("../img/svg/star.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+}
+.radio {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+
+	padding: 8px 0;
+
+	&__input {
+		padding: 0;
+		margin: 0;
+
+		flex-shrink: 0;
+
+		width: 16px;
+		height: 16px;
+
+		accent-color: #f7443a;
+	}
+
+	&__input:checked ~ &__title {
+		font-weight: 600;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 14px;
+	}
+}
