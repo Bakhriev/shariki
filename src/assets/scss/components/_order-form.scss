@@ -1,0 +1,102 @@
+.order-form {
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	&__field {
+		flex-grow: 1;
+		min-width: 190px;
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+		gap: 14px;
+	}
+}
+
+.field {
+	font-family: var(--font-family);
+
+	position: relative;
+
+	&--required {
+		.field__label {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -12px;
+				width: 6px;
+				height: 6px;
+				background-image: url("../img/svg/star.svg");
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+
+	&__input {
+		height: 100%;
+		padding-top: 14px;
+		height: 44px;
+
+		border-bottom: 1px solid var(--border);
+
+		font-weight: 400;
+		font-size: 12px;
+		color: var(--black);
+		transition: border-color 150ms ease-in-out;
+
+		&::placeholder {
+			color: #aaa;
+		}
+
+		&:focus {
+			border-color: var(--black);
+		}
+
+		&[type="number"]::-webkit-inner-spin-button,
+		&[type="number"]::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			margin: 0;
+		}
+	}
+
+	&__textarea {
+		height: 80px;
+		margin-top: 20px;
+
+		font-weight: 400;
+		font-size: 12px;
+		color: var(--black);
+
+		border-bottom: 1px solid #cfcfcf;
+		resize: none;
+		transition: border-color 150ms ease-in-out;
+
+		&::placeholder {
+			color: #aaa;
+		}
+
+		&:focus {
+			border-color: var(--black);
+		}
+	}
+
+	&__label {
+		position: absolute;
+		top: 4px;
+		left: 0;
+
+		font-weight: 400;
+		font-size: 12px;
+		color: #aaa;
+	}
+}

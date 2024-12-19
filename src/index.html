@@ -4,8 +4,10 @@
 	<body>
 		<div class="app">
 			@include('./assets/html/components/header.html')
-			<main class="main" style="padding: 40px 0">
-				<div class="container">
+			<main class="main" style="padding: 540px 0">
+				<div
+					class="container"
+					style="display: flex; flex-direction: column; gap: 100px">
 					<div class="cart">
 						<h2 class="cart__title">Моя корзина</h2>
 
@@ -194,6 +196,132 @@
 									<span class="radio__title">WhatsApp</span>
 								</label>
 							</div>
+						</div>
+					</div>
+
+					<form action="#" method="post" class="order-form">
+						<div class="order-form__row">
+							<div class="order-form__field field field--required">
+								<label for="order-form-name" class="field__label">Имя</label>
+
+								<input
+									type="text"
+									class="field__input input-reset"
+									name="order-form-name"
+									id="order-form-name"
+									required />
+							</div>
+
+							<div class="order-form__field field field--required">
+								<label for="order-form-phone" class="field__label"
+									>Телефон</label
+								>
+								<input
+									type="number"
+									class="field__input input-reset"
+									name="order-form-phone"
+									id="order-form-phone"
+									required />
+							</div>
+						</div>
+
+						<div class="order-form__row">
+							<div class="order-form__field field field--required">
+								<label for="order-form-date" class="field__label">Дата</label>
+
+								<input
+									type="date"
+									class="field__input input-reset"
+									name="order-form-date"
+									id="order-form-date"
+									required />
+							</div>
+
+							<div class="order-form__field field">
+								<input
+									type="time"
+									class="field__input input-reset"
+									name="order-form-time"
+									id="order-form-time" />
+								<label for="order-form-time" class="field__label">Время</label>
+							</div>
+						</div>
+
+						<div class="order-form__field field">
+							<label for="order-form-name" class="field__label">Адрес</label>
+
+							<input
+								type="text"
+								class="field__input input-reset"
+								name="order-form-name"
+								id="order-form-name"
+								required />
+						</div>
+
+						<div class="order-form__field field">
+							<label for="order-form-comment" class="field__label"
+								>Комментарий</label
+							>
+
+							<textarea
+								name="comment"
+								id=""
+								class="field__textarea input-reset"
+								placeholder=""></textarea>
+						</div>
+					</form>
+
+					<form action="#" method="post" class="promo">
+						<div class="promo__row">
+							<input
+								type="text"
+								placeholder="Промокод"
+								class="promo__input input-reset" />
+
+							<button class="promo__btn btn-reset">Применить</button>
+						</div>
+
+						<div class="promo__result">
+							Скидка в корзине <span>0</span> рублей
+						</div>
+					</form>
+
+					<div class="order-info">
+						<div class="order-info__top">
+							<div class="order-info__row">
+								<div class="order-info__text"><span>Итого: 20 шт</span></div>
+								<div class="order-info__title">
+									8000 <span class="order-info__currency">руб.</span>
+								</div>
+							</div>
+
+							<div class="order-info__row">
+								<div class="order-info__text">Стоимость доставки:</div>
+								<div class="order-info__title">
+									390 <span class="order-info__currency">руб.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="order-info__row">
+							<div class="order-info__title">Итого</div>
+							<div class="order-info__amount">
+								8390 <span class="order-info__currency">руб.</span>
+							</div>
+						</div>
+
+						<div class="order-info__hint">
+							выезд за МКАД оплачивается отдельно
+						</div>
+
+						<button class="order-info__btn btn-reset">Оформить заказ</button>
+
+						<div class="order-info__politic">
+							Нажимая кнопку "Оформить заказ" Вы соглашаетесь c обработкой ваших
+							данных, согласно <a
+								href="https://bighappy.ru/politika-konfidenczialnosti/"
+								>Политики конфиденциальности.</a
+							>
 						</div>
 					</div>
 				</div>

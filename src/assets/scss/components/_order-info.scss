@@ -1,0 +1,123 @@
+@use "../helpers/mixins" as *;
+
+.order-info {
+	font-family: var(--font-family);
+
+	border-radius: 14px;
+	padding: 18px;
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+
+	&__top {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		padding-bottom: 14px;
+		border-bottom: 1px solid #ebebeb;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		color: #404040;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 16px;
+		color: #404040;
+	}
+
+	&__currency {
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	&__amount {
+		font-weight: 600;
+		font-size: 20px;
+		color: #404040;
+	}
+
+	&__hint {
+		position: relative;
+
+		border-radius: 8px;
+		padding: 6px 28px 8px 12px;
+		background-color: #f6f6f6;
+
+		font-weight: 400;
+		font-size: 12px;
+		color: #8e8e8e;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+			width: 14px;
+			height: 14px;
+
+			background-image: url("../img/svg/truck.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__btn {
+		border-radius: 8px;
+		padding: 16px 40px;
+		background-color: #f7443a;
+
+		font-weight: 700;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+		transition: background-color 220ms ease-in-out;
+
+		&:focus-visible {
+			background-color: #bb332c;
+		}
+
+		@include hover {
+			background-color: #bb332c;
+		}
+
+		&:active {
+			scale: 0.99;
+		}
+	}
+
+	&__politic {
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 1.4;
+		color: #8e8e8e;
+		transition: color 220ms ease-in-out;
+		a {
+			text-decoration: underline;
+			@include hover {
+				color: var(--black);
+			}
+		}
+	}
+}
+.btn-reset {
+}
