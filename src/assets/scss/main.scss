@@ -3,25 +3,15 @@
 
 // base
 @use "./base/reset";
-@use "./base/typography";
 
 // helpers
 @use "./helpers/vars";
 @use "./helpers/mixins";
 @use "./helpers/utils";
-@use "./helpers/global";
 
 // components
-@use "./components/header";
-@use "./components/footer";
 @use "./components/cart";
 @use "./components/radio";
 @use "./components/order-form";
 @use "./components/promo";
-@use "./components/order-info";
-
-// Sections
-@use "./sections/hero";
-
-// Pages
-@use "./pages/home";
+@use "./components/order-details";
