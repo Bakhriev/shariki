@@ -1,0 +1,149 @@
+@use "../helpers/mixins" as *;
+
+.header {
+	&__container {
+	}
+
+	&__top {
+	}
+
+	&__top-container {
+		display: flex;
+	}
+
+	&__worktime-and-location {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__worktime,
+	&__location {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		font-weight: 400;
+		font-size: 14px;
+		text-decoration: underline;
+		text-decoration-style: dashed;
+		text-decoration-line: underline;
+		text-underline-offset: 3px;
+		color: #222;
+	}
+
+	&__worktime {
+	}
+
+	&__location {
+	}
+
+	&__links {
+		margin-left: auto;
+
+		display: flex;
+	}
+
+	&__socials {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__email {
+		font-weight: 400;
+		font-size: 16px;
+		text-decoration: underline;
+		text-decoration-skip-ink: none;
+		color: #169ef1;
+		transition: color 220ms ease-in-out;
+
+		@include hover {
+			color: #116aa1;
+		}
+	}
+
+	&__phone-text-link {
+		font-weight: 600;
+		font-size: 20px;
+		color: #222;
+		transition: color 220ms ease-in-out;
+
+		@include hover {
+			color: #666;
+		}
+	}
+
+	&__phone-btn-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		padding: 0 16px;
+		border-radius: 6px;
+		gap: 10px;
+		height: 44px;
+
+		font-weight: 600;
+		font-size: 14px;
+
+		background-color: #d4f7de;
+		color: #00992c;
+		transition: background-color 220ms ease-in-out;
+
+		@include hover {
+			background-color: #00992c;
+			color: #d4f7de;
+		}
+
+		&:active {
+			scale: 0.99;
+		}
+	}
+
+	&__body {
+	}
+
+	&__bottom {
+	}
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+
+	gap: 20px;
+
+	padding: 0 16px;
+	border-radius: 6px;
+
+	font-weight: 600;
+	font-size: 14px;
+	transition: background-color 220ms ease-in-out;
+
+	height: 44px;
+
+	&:active {
+		scale: 0.99;
+	}
+}
+
+.social--wt {
+	background-color: #d4f7de;
+	color: #00992c;
+
+	@include hover {
+		background-color: #00992c;
+		color: #d4f7de;
+	}
+}
+
+.social--tg {
+	color: #169ef1;
+	background-color: #d5efff;
+
+	@include hover {
+		background-color: #169ef1;
+		color: #d5efff;
+	}
+}
