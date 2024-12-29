@@ -5,15 +5,33 @@
 	}
 
 	&__top {
+		padding: 14px 0;
 	}
 
 	&__top-container {
 		display: flex;
+
+		@media screen and (max-width: 1300px) {
+			flex-direction: column;
+			gap: 16px;
+		}
 	}
 
 	&__worktime-and-location {
 		display: flex;
 		gap: 30px;
+
+		margin-right: 96px;
+
+		@media screen and (max-width: 1380px) {
+			margin-right: 20px;
+		}
+
+		@media screen and (max-width: 1300px) {
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 6px;
+		}
 	}
 
 	&__worktime,
@@ -35,20 +53,37 @@
 	}
 
 	&__location {
+		transition: color 220ms ease-in-out;
+		@include hover {
+			color: #666;
+		}
 	}
 
 	&__links {
-		margin-left: auto;
+		flex-grow: 1;
 
 		display: flex;
+		align-items: center;
+
+		@media screen and (max-width: 720px) {
+			justify-content: space-between;
+		}
 	}
 
 	&__socials {
 		display: flex;
 		gap: 10px;
+
+		@media screen and (max-width: 992px) {
+			gap: 4px;
+		}
 	}
 
 	&__email {
+		margin-left: auto;
+		margin-right: 30px;
+		display: block;
+
 		font-weight: 400;
 		font-size: 16px;
 		text-decoration: underline;
@@ -59,9 +94,21 @@
 		@include hover {
 			color: #116aa1;
 		}
+
+		@media screen and (max-width: 992px) {
+			margin-right: 24px;
+		}
+
+		@media screen and (max-width: 720px) {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
 	&__phone-text-link {
+		display: block;
+		margin-right: 16px;
+
 		font-weight: 600;
 		font-size: 20px;
 		color: #222;
@@ -69,6 +116,14 @@
 
 		@include hover {
 			color: #666;
+		}
+
+		@media screen and (max-width: 992px) {
+			margin-right: 24px;
+		}
+
+		@media screen and (max-width: 720px) {
+			display: none;
 		}
 	}
 
@@ -96,6 +151,12 @@
 
 		&:active {
 			scale: 0.99;
+		}
+
+		@media screen and (max-width: 840px) {
+			span {
+				display: none;
+			}
 		}
 	}
 
@@ -125,6 +186,12 @@
 
 	&:active {
 		scale: 0.99;
+	}
+
+	@media screen and (max-width: 720px) {
+		span {
+			display: none;
+		}
 	}
 }
 

@@ -1,27 +1,26 @@
 @font-face {
-	font-family: "Inter";
-	src: url("../fonts/Inter_18pt-Regular.woff2") format("woff2");
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Inter";
-	src: url("../fonts/Inter_18pt-Medium.woff2") format("woff2");
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Medium.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Inter";
-	src: url("../fonts/Inter_18pt-SemiBold.woff2") format("woff2");
-	font-weight: 600;
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+	font-weight: 700;
 	font-style: normal;
 }
 
-@font-face {
-	font-family: "Inter";
-	src: url("../fonts/Inter_18pt-Bold.woff2") format("woff2");
-	font-weight: 700;
-	font-style: normal;
+html {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
 }
