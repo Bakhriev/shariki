@@ -19,7 +19,7 @@
 
 	&__worktime-and-location {
 		display: flex;
-		gap: 30px;
+		gap: 6px 30px;
 
 		margin-right: 96px;
 
@@ -30,7 +30,6 @@
 		@media screen and (max-width: 1300px) {
 			justify-content: space-between;
 			flex-wrap: wrap;
-			gap: 6px;
 		}
 	}
 
@@ -161,9 +160,153 @@
 	}
 
 	&__body {
+		background-color: #3fb2f8;
+		padding: 14px 0;
+	}
+
+	&__burger {
+		display: none;
+
+		@media screen and (max-width: 992px) {
+			display: block;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__body-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+
+		.search-form {
+			flex-grow: 1;
+			max-width: 420px;
+
+			@media screen and (max-width: 992px) {
+				max-width: 100%;
+			}
+		}
 	}
 
 	&__bottom {
+	}
+}
+
+.mobile-menu {
+	@media screen and (max-width: 992px) {
+		position: fixed;
+		display: none;
+
+		.menu {
+			flex-direction: column;
+		}
+	}
+}
+
+.search-form {
+	position: relative;
+
+	&__field {
+		padding: 10px 40px 10px 20px;
+
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 14px;
+		color: #111;
+
+		border-radius: 6px;
+		background-color: #fff;
+
+		&:focus {
+			outline: 1px solid #222;
+		}
+
+		&::placeholder {
+			color: #76aecf;
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%);
+	}
+}
+
+.menu {
+	display: flex;
+	gap: 30px;
+
+	@media screen and (max-width: 1200px) {
+		gap: 15px;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-family: var(--font-family);
+		font-weight: 500;
+		font-size: 18px;
+		color: #fff;
+		transition: color 220ms ease-in-out;
+		text-decoration: none;
+
+		@media screen and (max-width: 1200px) {
+			font-size: 16px;
+		}
+
+		@include hover {
+			color: #f7443a;
+		}
+	}
+}
+
+.cart-link {
+	display: inline-block;
+	position: relative;
+	color: #fff;
+	transition: color 220ms ease-in-out;
+
+	@include hover {
+		color: #f7443a;
+	}
+
+	&__count {
+		position: absolute;
+		z-index: 1;
+		right: 1px;
+		top: 1px;
+	}
+}
+
+.count {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 12px;
+	color: #fff;
+	padding: 3px 6px;
+	border-radius: 50%;
+	background-color: #fc08b3;
+}
+
+.logo {
+	display: block;
+
+	&__img {
+		width: 160px;
+		height: 57px;
+
+		@media screen and (max-width: 1200px) {
+			width: 127px;
+			height: 52px;
+		}
 	}
 }
 

@@ -47,7 +47,81 @@
 			</div>
 		</div>
 	</div>
-	<div class="header__body"></div>
+
+	<div class="header__body">
+		<div class="header__body-container container">
+			<a href="/" class="logo header__logo">
+				<img
+					class="logo__img"
+					width="160"
+					height="57"
+					src="./assets/img/svg/logo.svg"
+					alt="logo" />
+			</a>
+
+			<form
+				class="search-form"
+				data-key="11c49cd38f486af294b46df0e6ca462bd9f88a30"
+				action="rezultaty-poiska/"
+				method="get"
+				id="mse2_form">
+				<input
+					type="text"
+					placeholder="Например, шар в форме сердца"
+					class="search-form__field input-reset"
+					name="query"
+					value="" />
+				<button
+					class="search-form__btn btn-reset"
+					aria-label="Поиск"
+					title="Поиск">
+					<svg width="18" height="18">
+						<use href="./assets/img/svg/sprite.svg#search"></use>
+					</svg>
+				</button>
+			</form>
+
+			<nav class="mobile-menu">
+				<ul class="menu list-reset">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Распродажа</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Доставка</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Оплата</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">О нас</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Отзывы</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header__actions">
+				<a
+					class="cart-link"
+					href="/korzina"
+					aria-label="Корзина"
+					title="Корзина">
+					<svg width="40" height="40">
+						<use href="./assets/img/svg/sprite.svg#cart"></use>
+					</svg>
+					<span class="cart-link__count count">9</span>
+				</a>
+
+				<button class="header__burger burger btn-reset">
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
 	<div class="header__bottom"></div>
 
 	<!-- <button class="burger btn-reset">
