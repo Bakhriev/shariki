@@ -254,6 +254,10 @@
 	@include hover {
 		background-color: #2ea04e;
 	}
+
+	@media screen and (max-width: 768px) {
+		padding: 12px 14px;
+	}
 }
 
 .catalog-menu {
@@ -293,6 +297,10 @@
 		@media screen and (max-width: 992px) {
 			padding: 14px 24px;
 			min-width: 0;
+		}
+
+		@media screen and (max-width: 768px) {
+			padding: 12px 14px;
 		}
 	}
 }
