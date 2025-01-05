@@ -1,7 +1,79 @@
 .burger {
-	display: none;
+	position: relative;
+	z-index: 1;
 
-	background-color: red;
 	width: 40px;
 	height: 40px;
+
+	padding: 8px 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	span {
+		position: absolute;
+		left: 50%;
+		width: 30px;
+		display: block;
+		height: 3px;
+		background-color: #fff;
+		border-radius: 10px;
+		transition: all 220ms linear;
+
+		transform: translateX(-50%);
+
+		&:first-child {
+			top: 8px;
+		}
+
+		&:nth-child(2) {
+			top: 50%;
+			transform: translateY(-50%) translateX(-50%);
+		}
+
+		&:last-child {
+			bottom: 8px;
+		}
+	}
+
+	&.active {
+		span {
+			&:first-child {
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%) rotate(45deg);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+			}
+
+			&:last-child {
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 6px 3px;
+
+		width: 30px;
+		height: 30px;
+
+		span {
+			&:first-child {
+				top: 6px;
+			}
+
+			&:nth-child(2) {
+				top: 50%;
+				transform: translateY(-50%) translateX(-50%);
+			}
+
+			&:last-child {
+				bottom: 6px;
+			}
+		}
+	}
 }

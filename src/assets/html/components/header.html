@@ -59,24 +59,38 @@
 					alt="logo" />
 			</a>
 
-			<form
-				class="search-form"
-				data-key="11c49cd38f486af294b46df0e6ca462bd9f88a30"
-				action="rezultaty-poiska/"
-				method="get"
-				id="mse2_form">
+			<form class="search-form" action="#" method="get">
 				<input
 					type="text"
 					placeholder="Например, шар в форме сердца"
 					class="search-form__field input-reset"
 					name="query"
 					value="" />
+
 				<button
 					class="search-form__btn btn-reset"
 					aria-label="Поиск"
 					title="Поиск">
 					<svg width="18" height="18">
 						<use href="./assets/img/svg/sprite.svg#search"></use>
+					</svg>
+				</button>
+			</form>
+
+			<form class="search-form search-form-mobile" action="#" method="get">
+				<input
+					type="text"
+					placeholder="Например, шар в форме сердца"
+					class="search-form__field input-reset"
+					name="query"
+					value="" />
+
+				<button
+					type="button"
+					class="search-form__btn btn-reset"
+					aria-label="Закрыть форму">
+					<svg width="18" height="18">
+						<use href="./assets/img/svg/sprite.svg#close"></use>
 					</svg>
 				</button>
 			</form>
@@ -105,6 +119,13 @@
 			</nav>
 
 			<div class="header__actions">
+				<button
+					class="mobile-search-icon btn-reset"
+					aria-label="Открыть форму поиска">
+					<svg width="30" height="30">
+						<use href="./assets/img/svg/sprite.svg#search"></use>
+					</svg>
+				</button>
 				<a
 					class="cart-link"
 					href="/korzina"
@@ -118,13 +139,74 @@
 
 				<button class="header__burger burger btn-reset">
 					<span></span>
+					<span></span>
+					<span></span>
 				</button>
 			</div>
 		</div>
 	</div>
-	<div class="header__bottom"></div>
+	<div class="header__bottom">
+		<div class="header__bottom-container container">
+			<div class="header__bottom-nav">
+				<a href="#" class="catalog-link">
+					<svg width="36" height="24">
+						<use href="./assets/img/svg/sprite.svg#balloons"></use>
+					</svg>
 
-	<!-- <button class="burger btn-reset">
-			<span></span>
-		</button> -->
+					<span>Каталог шаров</span>
+				</a>
+
+				<ul class="catalog-menu list-reset">
+					<li>
+						<a href="#" class="catalog-menu__link">
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#birthday"></use>
+							</svg>
+							<span>День рождения</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="catalog-menu__link">
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#kid"></use>
+							</svg>
+							<span>Шарики детям</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="catalog-menu__link">
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#baby_carriage"></use>
+							</svg>
+							<span>Шары на выписку</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="catalog-menu__link">
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#dress"></use>
+							</svg>
+							<span>Шарики на свадьбу</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="catalog-menu__link">
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#usd"></use>
+							</svg>
+							<span>Шары-цифры</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="catalog-menu__link">
+							<svg width="24" height="24">
+								<use href="./assets/img/svg/sprite.svg#confetti"></use>
+							</svg>
+							<span>Шарики c конфетти</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </header>
