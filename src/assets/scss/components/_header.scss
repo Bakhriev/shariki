@@ -218,6 +218,17 @@
 		background-color: #e2f4ff;
 	}
 
+	&__bottom-container {
+		position: relative;
+
+		&:has(.catalog-link:hover) {
+			.top-menu-catalog-inner {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+
 	&__bottom-nav {
 		display: flex;
 		align-items: center;
