@@ -4,6 +4,126 @@
 	<body>
 		<div class="app">
 			@include('./assets/html/components/header.html')
+			<main>
+				<section class="catalog">
+					<div class="container">
+						<div class="catalog__top">
+							<h2 class="catalog__title">Воздушные шары</h2>
+							<a href="#" class="catalog__link">Весь каталог</a>
+						</div>
+						<div class="catalog__carousel swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="catalog-card">
+										<a href="#" class="catalog-card__link"></a>
+										<img
+											src="./assets/img/shariki_s_geliem.jpg"
+											alt=""
+											class="catalog-card__img" />
+										<span class="catalog-card__text">Шары с гелием</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="catalog-card">
+										<a href="#" class="catalog-card__link"></a>
+										<img
+											src="./assets/img/fontani_iz_sharov.jpg"
+											alt=""
+											class="catalog-card__img" />
+										<span class="catalog-card__text">Фонтаны из шаров</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="catalog-card">
+										<a href="#" class="catalog-card__link"></a>
+										<img
+											src="./assets/img/svetovie_shari.jpg"
+											alt=""
+											class="catalog-card__img" />
+										<span class="catalog-card__text"
+											>Светящиеся шары со светодиодами</span
+										>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="catalog-card">
+										<a href="#" class="catalog-card__link"></a>
+										<img
+											src="./assets/img/shari_sifri.jpg"
+											alt=""
+											class="catalog-card__img" />
+										<span class="catalog-card__text">Шары цифры</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="catalog-card">
+										<a href="#" class="catalog-card__link"></a>
+										<img
+											src="./assets/img/folgirovannie_shari.jpg"
+											alt=""
+											class="catalog-card__img" />
+										<span class="catalog-card__text">Фольгированные шары</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="catalog-card">
+										<a href="#" class="catalog-card__link"></a>
+										<img
+											src="./assets/img/bolshi_vozdushnie_shari.jpg"
+											alt=""
+											class="catalog-card__img" />
+										<span class="catalog-card__text"
+											>Большие воздушные шары</span
+										>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="catalog-card">
+										<a href="#" class="catalog-card__link"></a>
+										<img
+											src="./assets/img/oformlenie_sharami.jpg"
+											alt=""
+											class="catalog-card__img" />
+										<span class="catalog-card__text">Оформление шарами</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-button-prev">
+								<svg
+									width="16"
+									height="14"
+									viewBox="0 0 16 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M15 7L1 7M1 7L7 1M1 7L7 13"
+										stroke="#169EF1"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</div>
+
+							<div class="swiper-button-next">
+								<svg
+									width="16"
+									height="14"
+									viewBox="0 0 16 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1 7L15 7M15 7L9 13M15 7L9 1"
+										stroke="#169EF1"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 			@include('./assets/html/components/footer.html')
 		</div>
 		@include('./template/_scripts.html')

@@ -58,3 +58,13 @@ const mobileMenu = () => {
 };
 
 mobileMenu();
+
+const catalogCarousel = new Swiper(".catalog__carousel", {
+	slidesPerView: "auto",
+	spaceBetween: 12,
+
+	navigation: {
+		prevEl: ".swiper-button-prev",
+		nextEl: ".swiper-button-next",
+	},
+});
